@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>The Quiz</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="banner">
+                <h1>The Code Quiz</h1>
+            </div>
+            <div id="prequizSection">
+                <div class="box">
+                    <p>Please press the start button to start taking this amazing time coding quiz that will blow your little mind away.</p>
+                    <div class="btns">
+                        <button id="startBtn">Start Mind Blowing</button>
+                        <button id="highScore">View High Scores</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box" id="timer">
+                <p>Time Left:
+                    <span id="time"></span>
+                </p>
+            </div>
+            <div id="quizSections" class="box">
+                <div id="quizSection1">
+                    <p>What is a class</p>
+                    <div>
+                        <button class="inputBtn" data-q="1" value="correct">A tag that can be used multiple times</button>
+                        <button class="inputBtn" data-q="1" value="wrong">Something you go to in highschool</button>
+                        <button class="inputBtn" data-q="1" value="wrong">a category of animals</button>
+                        <button class="inputBtn" data-q="1" value="wrong">All of the above</button>
+                    </div>
+                </div>
+                <div id="quizSection2">
+                    <p>What is an Id</p>
+                    <div>
+                        <button class="inputBtn" data-q="2" value="wrong">A number on your drivers license</button>
+                        <button class="inputBtn" data-q="2" value="correct">A Tag that can only be used once</button>
+                        <button class="inputBtn" data-q="2" value="wrong">All of the above</button>
+                        <button class="inputBtn" data-q="2" value="wrong">A number given to you at birth</button>
+                    </div>
+                </div>
+                <div id="quizSection3">
+                    <p>Who was Javascript developed by?</p>
+                    <div>
+                        <button class="inputBtn" data-q="3" value="wrong">Herman Cohen</button>
+                        <button class="inputBtn" data-q="3" value="wrong">Dylan Steward</button>
+                        <button class="inputBtn" data-q="3" value="correct">Brendan Eich</button>
+                        <button class="inputBtn" data-q="3" value="wrong">Oscar Chaney</button>
+                    </div>
+                </div>
+                <div id="quizSection4">
+                    <p>When was Javascript developed</p>
+                    <div>
+                        <button class="inputBtn" data-q="4" value="wrong">1993</button>
+                        <button class="inputBtn" data-q="4" value="wrong">1994</button>
+                        <button class="inputBtn" data-q="4" value="correct">1995</button>
+                        <button class="inputBtn" data-q="4" value="wrong">1996</button>
+                    </div>
+                </div>
+                <p class="result"></p>
+            </div>
+            <div class="box" id="finalResults">
+                <div>
+                    <p>You answered
+                        <span id="correctAnswers"></span>
+                        correctly</p>
+                    <p>You answered
+                        <span id="wrongAnswers"></span>
+                        incorrectly
+                    </p>
+                </div>
+                <form id="personForm" action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <button>submit score</button>
+                </form>
+            </div>
+            <div class="box" id="scoreboard">
+                <h1>Scoreboard</h1>
+                <div id="userScores"></div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
